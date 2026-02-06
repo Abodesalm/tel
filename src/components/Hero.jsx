@@ -83,7 +83,7 @@ export const Hero = () => {
                     {/* Logo Badge */}
                     <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full glass mb-8 bg-background">
                         <Wifi className="w-5 h-5 text-telecom-red" />
-                        <span className="font-tajawal text-sm text-foreground/80">
+                        <span className="font-tajawal text-sm text-white/80">
                             خدمات الإنترنت الفضائي في دير الزور
                         </span>
                     </div>
