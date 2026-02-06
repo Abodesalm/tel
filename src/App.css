@@ -1,0 +1,45 @@
+/* Telecom Landing Page Styles */
+
+.App {
+    min-height: 100vh;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+    background-color: rgba(219, 50, 50, 0.3);
+    color: inherit;
+}
+
+/* Focus styles */
+*:focus-visible {
+    outline: 2px solid #DB3232;
+    outline-offset: 2px;
+}
+
+/* Transition defaults */
+* {
+    transition-property: color, background-color, border-color, opacity, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/* Image optimization */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button hover effects */
+button {
+    cursor: pointer;
+}
+
+/* Remove tap highlight on mobile */
+* {
+    -webkit-tap-highlight-color: transparent;
+}

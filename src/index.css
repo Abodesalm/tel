@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Tajawal:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --telecom-red: #DB3232;
+    --telecom-orange: #EC6437;
+    --telecom-bg-dark: #050505;
+    --telecom-bg-light: #FFFFFF;
+    --telecom-surface-dark: #121212;
+    --telecom-surface-light: #F8F9FA;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    direction: rtl;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+}
+
+code {
+    font-family:
+        source-code-pro, Menlo, Monaco, Consolas, \"Courier New\", monospace;
+}
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 222.2 84% 4.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 222.2 84% 4.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 222.2 84% 4.9%;
+        --primary: 355 70% 53%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 17 83% 57%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: 210 40% 96.1%;
+        --muted-foreground: 215.4 16.3% 46.9%;
+        --accent: 210 40% 96.1%;
+        --accent-foreground: 222.2 47.4% 11.2%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 214.3 31.8% 91.4%;
+        --input: 214.3 31.8% 91.4%;
+        --ring: 355 70% 53%;
+        --radius: 0.75rem;
+    }
+
+    .dark {
+        --background: 0 0% 2%;
+        --foreground: 0 0% 98%;
+        --card: 0 0% 7%;
+        --card-foreground: 0 0% 98%;
+        --popover: 0 0% 7%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 355 70% 53%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 17 83% 57%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: 0 0% 14.9%;
+        --muted-foreground: 0 0% 63.9%;
+        --accent: 0 0% 14.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 14.9%;
+        --input: 0 0% 14.9%;
+        --ring: 355 70% 53%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--telecom-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--telecom-red);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--telecom-orange);
+}
+
+/* Gradient text */
+.gradient-text {
+    background: linear-gradient(135deg, var(--telecom-red) 0%, var(--telecom-orange) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Gradient button */
+.gradient-btn {
+    background: linear-gradient(135deg, var(--telecom-red) 0%, var(--telecom-orange) 100%);
+}
+
+.gradient-btn:hover {
+    background: linear-gradient(135deg, var(--telecom-orange) 0%, var(--telecom-red) 100%);
+}
+
+/* Glassmorphism */
+.glass {
+    background: rgba(18, 18, 18, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .glass {
+    background: rgba(18, 18, 18, 0.6);
+}
+
+.light .glass {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Glow effect */
+.glow-red {
+    box-shadow: 0 0 40px rgba(219, 50, 50, 0.3);
+}
+
+/* Parallax */
+.parallax-container {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+@layer base {
+    [data-debug-wrapper=\"true\"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper=\"true\"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}
