@@ -7,7 +7,7 @@ const branches = [
     {
         name: 'حي العرفي',
         phone: '0982450249',
-        description: 'فرعنا الرئيسي في حي العرفي',
+        description: 'فرعنا في حي العرفي',
     },
     {
         name: 'حي الجبيلة',
