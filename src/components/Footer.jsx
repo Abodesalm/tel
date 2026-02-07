@@ -23,7 +23,7 @@ export const Footer = () => {
                             <img className="w-26 h-auto text-white" src='/logo.png' />
                         </div>
                         <span className="font-cairo font-bold text-xl gradient-text">
-                            تيلكوم
+                            تلكم
                         </span>
                     </motion.div>
 
@@ -33,7 +33,7 @@ export const Footer = () => {
                             صنع بـ <Heart className="w-4 h-4 text-telecom-red" /> في دير الزور
                         </p>
                         <p className="font-tajawal text-foreground/40 text-sm mt-1">
-                            © {currentYear} تيلكوم. جميع الحقوق محفوظة.
+                            © {currentYear} تلكم. جميع الحقوق محفوظة.
                         </p>
                     </div>
 

@@ -101,7 +101,7 @@ export const Packages = () => {
                         باقات <span className="gradient-text">الإنترنت</span>
                     </h2>
                     <p className="font-tajawal text-foreground/70 max-w-2xl mx-auto text-base sm:text-lg">
-                        اختر الباقة المناسبة لاحتياجاتك واستمتع بإنترنت فضائي مستقر
+                        اختر الباقة المناسبة لاحتياجاتك واستمتع بإنترنت ضوئي مستقر
                     </p>
                 </motion.div>
 

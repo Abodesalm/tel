@@ -55,7 +55,7 @@ export const Header = ({ theme, toggleTheme }) => {
                             <img className="w-26 h-auto text-white" src='/logo.png' />
                         </div>
                         <span className="font-cairo font-bold text-2xl gradient-text">
-                            تيلكوم
+                            تلكم
                         </span>
                     </motion.div>
 

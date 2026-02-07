@@ -84,7 +84,7 @@ export const Hero = () => {
                     <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full glass mb-8 bg-background">
                         <Wifi className="w-5 h-5 text-telecom-red" />
                         <span className="font-tajawal text-sm text-white/80">
-                            خدمات الإنترنت الفضائي في دير الزور
+                            خدمات الإنترنت الضوئي والفضائي في دير الزور
                         </span>
                     </div>
                 </motion.div>
@@ -110,7 +110,7 @@ export const Hero = () => {
                 >
                     اتصال سريع ومستقر وموثوق في مدينة دير الزور
                     <br />
-                    تيلكوم - شريكك الأمثل للاتصال بالعالم
+                    تلكم - شريكك الأمثل للاتصال بالعالم
                 </motion.p>
 
                 <motion.div

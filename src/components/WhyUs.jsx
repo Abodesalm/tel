@@ -86,12 +86,12 @@ export const WhyUs = () => {
                         مميزاتنا
                     </span>
                     <h2 className="font-cairo font-bold text-3xl sm:text-4xl lg:text-5xl mb-4" data-testid="why-us-title">
-                        لماذا <span className="gradient-text">تيلكوم؟</span>
+                        لماذا <span className="gradient-text">تلكم؟</span>
                     </h2>
                     <p className="font-tajawal text-foreground/70 max-w-2xl mx-auto text-base sm:text-lg">
-                        نحن نقدم أفضل خدمات الإنترنت الفضائي في دير الزور مع التزامنا بالجودة والموثوقية
+                        نحن نقدم أفضل خدمات الإنترنت الضوئي والفضائي في دير الزور مع التزامنا بالجودة والموثوقية
                     </p>
-                </motion.div>
+                </motion.div> 
 
                 {/* Bento Grid */}
                 <motion.div
